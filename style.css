@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: regular;
+  src: url(./Fonts/NeueMachina-Regular.e896c98c.otf);
+}
+
+@font-face {
+  font-family: roman;
+  src: url(./Fonts/NeueHaasDisplayRoman.d8850e5c.ttf);
+}
+
+.regular {
+  font-family: regular;
+}
+
+.roman {
+  font-family: roman;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+}
+
+/* .page3-video {
+  transform: rotate(1deg);
+} */
+
+.page4-circle {
+  left: -50%;
+  top: 45%;
+  /* transform: translate(-50%, 0%); */
+}
+
+.page4-circle-elem {
+  animation: moveUpDown 4s linear infinite both;
+  box-shadow: 8px 8px 5px 0px #cecdd85b;
+}
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+}
+
+input::placeholder {
+  color: #000000 !important;
+}
